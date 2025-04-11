@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     analog({
       ssr: true,
+      static: false,
       nitro: {
         serveStatic: false,
         routeRules: {
