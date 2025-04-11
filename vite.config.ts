@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
         },
       },
       prerender: {
-        routes: ['index.html'],
+        routes: ['/', 'index.html'],
       },
     }),
   ],
