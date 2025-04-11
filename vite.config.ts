@@ -12,11 +12,7 @@ export default defineConfig(({ mode }) => ({
     mainFields: ['module'],
   },
   plugins: [
-    analog({
-      prerender: {
-        routes: [],
-      },
-    }),
+    analog({}),
   ],
   test: {
     globals: true,
