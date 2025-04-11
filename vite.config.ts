@@ -13,15 +13,13 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
+      static: true,
       ssr: true,
       nitro: {
         routeRules: {
           '/': {
             prerender: false,
           },
-        },
-        prerender: {
-          routes: ['/'],
         },
       },
       prerender: {
