@@ -18,9 +18,6 @@ export default defineConfig(({ mode }) => ({
           '/': { prerender: false },
         },
       },
-      prerender: {
-        routes: [],
-      },
     }),
   ],
   test: {
