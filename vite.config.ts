@@ -13,7 +13,13 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
-      liveReload: true,
+      nitro: {
+        routeRules: {
+          '/': {
+            prerender: false,
+          },
+        },
+      },
     }),
   ],
   test: {
