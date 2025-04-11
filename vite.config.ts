@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => ({
         routeRules: {
           '/': {
             prerender: false,
+            ssr: false,
           },
         },
       },
