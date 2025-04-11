@@ -17,13 +17,12 @@ export default defineConfig(({ mode }) => ({
       nitro: {
         serveStatic: false,
         routeRules: {
-          '/': {
-            prerender: false,
-          },
+          '/': { prerender: false },
+          '/index.html': { prerender: false },
         },
       },
       prerender: {
-        routes: ['/index.html'],
+        routes: [''],
       },
     }),
   ],
