@@ -13,13 +13,17 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     analog({
+      ssr: true,
       nitro: {
+        serveStatic: false,
         routeRules: {
           '/': {
             prerender: false,
-            ssr: false,
           },
         },
+      },
+      prerender: {
+        routes: async () => [],
       },
     }),
   ],
