@@ -17,7 +17,6 @@ export default defineConfig(({ mode }) => ({
       nitro: {
         serveStatic: false,
         routeRules: {
-          '/': { prerender: false },
           '/index.html': { prerender: false },
         },
       },
