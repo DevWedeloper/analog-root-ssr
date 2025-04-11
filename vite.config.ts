@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
       nitro: {
         routeRules: {
           '/': {
-            prerender: false,
+            ssr: true,
           },
         },
       },
