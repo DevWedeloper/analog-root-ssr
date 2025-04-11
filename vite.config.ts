@@ -12,7 +12,9 @@ export default defineConfig(({ mode }) => ({
     mainFields: ['module'],
   },
   plugins: [
-    analog({}),
+    analog({
+      liveReload: true,
+    }),
   ],
   test: {
     globals: true,
