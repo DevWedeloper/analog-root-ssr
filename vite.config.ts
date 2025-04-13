@@ -15,7 +15,7 @@ export default defineConfig(({ mode }) => ({
     analog({
       nitro: {
         prerender: {
-          ignore: ['/'],
+          ignore: ['/index.html'],
         },
       },
     }),
